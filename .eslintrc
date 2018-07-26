@@ -19,14 +19,7 @@
     "plugin:jest/recommended"
   ],
   "rules": {
-    "import/no-extraneous-dependencies": [
-      2,
-      {
-        "devDependencies": false,
-        "optionalDependencies": false,
-        "peerDependencies": false
-      }
-    ],
+    "import/no-extraneous-dependencies": 0,
     "indent": ["error", 2],
     "jest/no-disabled-tests": "warn",
     "jest/no-focused-tests": "error",

@@ -1,4 +1,3 @@
-/* eslint import/no-extraneous-dependencies: 0 */
 import renderer from 'react-test-renderer';
 
 import { configure } from 'enzyme';
