@@ -1,5 +1,10 @@
 # Setup
 
+Clone repo and open navigate to `1-introduction`
+```
+https://github.com/nielsvanmidden/react-workshop.git
+```
+
 Install packages
 ```
 npm install
