@@ -1,18 +1,18 @@
 [
-    {
-      "description": "Notification for information purposes. Color of indication: yellow",
-      "title": "Info",
-      "type": "info",
-      "uiId": "0"
-    }, {
-      "description": "Notification of success. For example, you've successfully added a giftcard to the checkout. Color of indication: green.",
-      "title": "Success",
-      "type": "success",
-      "uiId": "1"
-    }, {
-      "description": "When everything breaks then this notification is shown. Color of indication: red.",
-      "title": "Warning",
-      "type": "warning",
-      "uiId": "2"
-    }
-  ]
+  {
+    "description": "Notification for information purposes. Color of indication: yellow",
+    "title": "Info",
+    "type": "info",
+    "uiId": "0"
+  }, {
+    "description": "Notification of success. For example, you've successfully added a giftcard to the checkout. Color of indication: green.",
+    "title": "Success",
+    "type": "success",
+    "uiId": "1"
+  }, {
+    "description": "When everything breaks then this notification is shown. Color of indication: red.",
+    "title": "Warning",
+    "type": "warning",
+    "uiId": "2"
+  }
+]

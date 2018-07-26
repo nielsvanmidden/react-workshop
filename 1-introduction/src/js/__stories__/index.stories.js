@@ -11,10 +11,10 @@ const notes = 'Awesome Bol.com Toaster';
 const App = (<div><Toaster data={ data } /></div>);
 
 if (window.addonsDefaultChannel) {
-    storiesOf('Toaster', module)
-        .add('default', withNotes(notes)(() => (
-            App
-        )));
+  storiesOf('Toaster', module)
+    .add('default', withNotes(notes)(() => (
+      App
+    )));
 }
 
 export default App;
