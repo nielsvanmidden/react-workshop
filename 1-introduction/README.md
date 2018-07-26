@@ -20,6 +20,9 @@ Open your browser
 http:localhost:6006
 ```
 
+# Styleguide
+We can use styleguide:v2 for some markup guidance.
+
 # Goal
 Goal of this exercise is getting a basic understanding of React component types, using state and using events.
 
