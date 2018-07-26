@@ -1,15 +1,16 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import NavBarItem from './navbar/navbar.item';
+// import PropTypes from 'prop-types';
 
-class Toaster extends React.Component {
-    render() {
-        return (<ul />);
-    }
-}
+// class Toaster extends React.Component {
+//     render() {
+//         return (<ul />);
+//     }
+// }
 
-DesktopNavigation.propTypes = {};
+const Toaster = () => (<ul />);
 
-DesktopNavigation.defaultProps = {};
+// Toaster.propTypes = {};
+
+// Toaster.defaultProps = {};
 
 export default Toaster;
