@@ -4,11 +4,11 @@ import { storiesOf } from '@storybook/react';
 import { withNotes } from '@storybook/addon-notes';
 
 import Toaster from '../index';
-// import props from '../__data__/index.json';
+import data from '../__data__/index.json';
 
 const notes = 'Awesome Bol.com Toaster';
 
-const App = (<div><Toaster /></div>);
+const App = (<div><Toaster data={ data } /></div>);
 
 if (window.addonsDefaultChannel) {
     storiesOf('Toaster', module)
