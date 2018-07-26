@@ -17,7 +17,7 @@ npm run storybook
 
 Open your browser
 ```
-http:localhost:6006
+http://localhost:6006
 ```
 
 # Styleguide
