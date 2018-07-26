@@ -1,0 +1,90 @@
+{
+  "name": "1-introduction",
+  "version": "1.0.0",
+  "description": "Introduction to React",
+  "main": "lib/index.js",
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "cz": "git-cz",
+    "lint": "eslint src/**/*.js",
+    "precommit": "lint-staged",
+    "test": "jest --no-cache --silent --runInBand",
+    "test:watchAll:silent": "clear && jest --watchAll --silent",
+    "test:watchAll:loud": "clear && jest --watchAll",
+    "test:watchChanged:silent": "clear && jest --watch --onlyChanged --silent --verbose",
+    "test:watchChanged:loud": "clear && jest --watch --onlyChanged  --verbose",
+    "test:coverage": "jest --coverage --collectCoverageFrom=src/js/**/*.js --silent",
+    "storybook": "start-storybook -p 6006"
+  },
+  "jest": {
+    "coveragePathIgnorePatterns": [
+      "/__stories__/",
+      "/__data__/"
+    ],
+    "setupFiles": [
+      "<rootDir>/jest.setup.js"
+    ],
+    "roots": [
+      "src/"
+    ],
+    "transform": {
+      "^.+\\.(js|jsx|ts|tsx)$": "babel-jest"
+    },
+    "testResultsProcessor": "<rootDir>/node_modules/jest-junit"
+  },
+  "jest-junit": {
+    "suiteName": "jest tests",
+    "output": "./reports/test-report.xml",
+    "classNameTemplate": "{classname}-{title}",
+    "titleTemplate": "{classname}-{title}",
+    "ancestorSeparator": " › ",
+    "usePathForSuiteName": "true"
+  },
+  "keywords": [
+    "React",
+    "Desktop",
+    "Navigation"
+  ],
+  "contributors": [
+    "Niels van Midden <niels.vanmidden@gmail.com>"
+  ],
+  "devDependencies": {
+    "@storybook/addon-actions": "^3.3.11",
+    "@storybook/addon-links": "^3.3.11",
+    "@storybook/addon-notes": "^3.3.11",
+    "@storybook/addons": "^3.3.11",
+    "@storybook/react": "^3.3.11",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-jest": "^22.1.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^4.16.0",
+    "eslint-config-dbk": "^3.3.2",
+    "eslint-plugin-jest": "^21.7.0",
+    "husky": "^0.14.3",
+    "jest": "^22.1.4",
+    "jest-junit": "^3.4.1",
+    "lint-staged": "^6.0.0",
+    "react-test-renderer": "^16.2.0",
+    "webpack-merge": "^4.1.1"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  }
+}
