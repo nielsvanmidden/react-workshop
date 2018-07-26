@@ -1,4 +1,4 @@
-# 1. Creating a Toaster
+# Creating a Toaster
 
 ## Goal
 Goal of this exercise is getting a basic understanding of React component types, using state and using events.
