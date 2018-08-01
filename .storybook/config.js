@@ -13,3 +13,4 @@ const initialize = (req) => {
 };
 
 initialize(require.context('../1-introduction/src/', true, /\.stories\.js$/));
+initialize(require.context('../2-redux/src/', true, /\.stories\.js$/));

@@ -1,6 +1,0 @@
-<testsuites name="jest tests" tests="1" failures="0" time="0.566">
-  <testsuite name="&lt;App /&gt;" errors="0" failures="0" skipped="0" timestamp="2018-07-26T19:10:48" time="0.566" tests="1">
-    <testcase classname="&lt;App /&gt; Snaphot should match default" name="&lt;App /&gt; Snaphot should match default" time="0.013">
-    </testcase>
-  </testsuite>
-</testsuites>

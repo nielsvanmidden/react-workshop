@@ -33,13 +33,11 @@
     ],
     "transform": {
       "^.+\\.(js|jsx|ts|tsx)$": "babel-jest"
-    },
-    "testResultsProcessor": "<rootDir>/node_modules/jest-junit"
+    }
   },
   "keywords": [
     "React",
-    "Desktop",
-    "Navigation"
+    "Redux"
   ],
   "contributors": [
     "Niels van Midden <niels.vanmidden@gmail.com>"
@@ -65,13 +63,16 @@
     "jest": "^22.1.4",
     "lint-staged": "^6.0.0",
     "react-test-renderer": "^16.2.0",
+    "redux-logger": "^3.0.6",
     "webpack-merge": "^4.1.1"
   },
   "dependencies": {
     "classnames": "^2.2.5",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0"
   },
   "peerDependencies": {
     "react": "^16.0.0",
