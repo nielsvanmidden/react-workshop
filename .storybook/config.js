@@ -6,11 +6,11 @@ const initialize = (req) => {
   window.addonsDefaultChannel = require('@storybook/addons').default.channel;
 
   const loadStories = () => {
-    req.keys().forEach((filename) => req(filename));
+    require('../1-introduction/src/js/__stories__/index.stories');
+    require('../2-redux/src/js/__stories__/index.stories');
   };
 
   configure(loadStories, module);
 };
 
-initialize(require.context('../1-introduction/src/', true, /\.stories\.js$/));
-initialize(require.context('../2-redux/src/', true, /\.stories\.js$/));
+initialize();

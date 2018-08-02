@@ -1,19 +1,26 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { onDismissToast } from '../store/actions';
 import PropTypes from 'prop-types';
 import Toast from './toast';
 import Alert from './alert';
 
-/* eslint object-curly-newline: 0 */
-class Toaster extends React.Component {
-  render() {
-    return (
-      <div className="toast toast--bottom" />
-    );
-  }
-}
+const Toaster = ({ actions, toaster }) => (
+  <div className="toast  toast--bottom">
+    { toaster.data.map((item) => (
+      <Toast key={ item.uiId }>
+        <Alert { ...item } onClick={ actions.onDismissToast } />
+      </Toast>
+    ))}
+  </div>
+);
 
+/* eslint object-curly-newline: 0 */
 Toaster.propTypes = {
+  actions: PropTypes.shape({
+    onDismissToast: PropTypes.func.isRequired,
+  }).isRequired,
   data: PropTypes.arrayOf(PropTypes.shape({
     description: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
@@ -27,7 +34,7 @@ export default connect(
     toaster,
   }),
   dispatch => ({ // map dispatch to props
-
+    actions: bindActionCreators({ onDismissToast }, dispatch),
   }),
 )(Toaster);
 

@@ -25,7 +25,7 @@
     "jest/no-focused-tests": "error",
     "jest/no-identical-title": "error",
     "jest/valid-expect": "error",
-    "object-curly-newline": ["error", { "multiline": true }],
+    "object-curly-newline": 0,
     "react/jsx-indent": ["error", 2],
     "react/jsx-indent-props": ["error", 2]
   }

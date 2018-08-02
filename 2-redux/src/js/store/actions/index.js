@@ -1,4 +1,4 @@
 export * from './toaster';
 
-export const SET_PRISTINE = 'SET_PRISTINE';
-export const setPristine = payload => ({ payload, type: SET_PRISTINE });
+export const DISMISS_TOAST = 'DISMISS_TOAST';
+export const onDismissToast = uiId => ({ uiId, type: DISMISS_TOAST });
