@@ -8,7 +8,7 @@ const Alert = ({ description, onClick, title, type, uiId }) => (
     <div className="c-media  c-media--center">
       <div className="c-media__body">{ description }</div>
     </div>
-    <Button onClick={ onClick } uiId={ uiId } />
+    <Button onClick={ () => {} } uiId={ uiId } />
   </div>
 );
 

@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 /* eslint max-len: 0 */
-const Button = ({ onClick, uiId }) => {
-  const onButtonClick = () => onClick(uiId);
+const Button = () => {
+  const onButtonClick = () => {};
 
   return (
     <button
@@ -19,8 +19,6 @@ const Button = ({ onClick, uiId }) => {
 };
 
 Button.propTypes = {
-  onClick: PropTypes.func.isRequired,
-  uiId: PropTypes.string.isRequired,
 };
 
 export default Button;

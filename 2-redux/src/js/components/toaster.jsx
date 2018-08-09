@@ -1,17 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import { onDismissToast } from '../store/actions';
 import PropTypes from 'prop-types';
 import Toast from './toast';
 import Alert from './alert';
 
-const Toaster = ({ actions, toaster }) => (
+const Toaster = ({ }) => (
   <div className="toast  toast--bottom">
     { toaster.data.map((item) => (
-      <Toast key={ item.uiId }>
-        <Alert { ...item } onClick={ actions.onDismissToast } />
-      </Toast>
+      <li />
     ))}
   </div>
 );
@@ -30,11 +26,11 @@ Toaster.propTypes = {
 };
 
 export default connect(
-  ({ toaster }) => ({ // map state to props
-    toaster,
+  () => ({ // map state to props
+
   }),
-  dispatch => ({ // map dispatch to props
-    actions: bindActionCreators({ onDismissToast }, dispatch),
+  () => ({ // map dispatch to props
+
   }),
 )(Toaster);
 
