@@ -4,6 +4,8 @@
 * Why React and Redux for Checkout
 * Small introduction to components
 
+[Start workshop #1](https://github.com/nielsvanmidden/react-workshop/tree/master/1-introduction)
+
 ## 2. Redux
 * Introduction to redux
 * Prepare your initial state: Data normalization
