@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> Snaphot should match default 1`] = `
+<div>
+  <div
+    className="toast toast--bottom"
+  >
+    <div>
+      <div
+        className="alert  alert--toast alert--info"
+        role="alert"
+      >
+        <h3
+          className="alert__title"
+        >
+          Info
+        </h3>
+        <div
+          className="c-media  c-media--center"
+        >
+          <div
+            className="c-media__body"
+          >
+            Notification for information purposes. Color of indication: yellow
+          </div>
+        </div>
+        <button
+          aria-label="Close"
+          className="alert__close  ui-btn  ui-btn--icon  ui-btn--lg"
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--bi bi-cross bi-lg"
+            version="1.1"
+            viewBox="0 0 14 14"
+          >
+            <path
+              d="M7 7.378l3.363 3.363a.496.496 0 0 0 .703-.004c.19-.19.197-.51.004-.703L7.707 6.67l3.363-3.363a.496.496 0 0 0-.004-.703.502.502 0 0 0-.703-.004L7 5.964 3.637 2.6a.496.496 0 0 0-.703.004.502.502 0 0 0-.004.703L6.293 6.67 2.93 10.034a.496.496 0 0 0 .004.703c.19.19.51.197.703.004L7 7.378z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div>
+      <div
+        className="alert  alert--toast alert--success"
+        role="alert"
+      >
+        <h3
+          className="alert__title"
+        >
+          Success
+        </h3>
+        <div
+          className="c-media  c-media--center"
+        >
+          <div
+            className="c-media__body"
+          >
+            Notification of success. For example, you've successfully added a giftcard to the checkout. Color of indication: green.
+          </div>
+        </div>
+        <button
+          aria-label="Close"
+          className="alert__close  ui-btn  ui-btn--icon  ui-btn--lg"
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--bi bi-cross bi-lg"
+            version="1.1"
+            viewBox="0 0 14 14"
+          >
+            <path
+              d="M7 7.378l3.363 3.363a.496.496 0 0 0 .703-.004c.19-.19.197-.51.004-.703L7.707 6.67l3.363-3.363a.496.496 0 0 0-.004-.703.502.502 0 0 0-.703-.004L7 5.964 3.637 2.6a.496.496 0 0 0-.703.004.502.502 0 0 0-.004.703L6.293 6.67 2.93 10.034a.496.496 0 0 0 .004.703c.19.19.51.197.703.004L7 7.378z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div>
+      <div
+        className="alert  alert--toast alert--warning"
+        role="alert"
+      >
+        <h3
+          className="alert__title"
+        >
+          Warning
+        </h3>
+        <div
+          className="c-media  c-media--center"
+        >
+          <div
+            className="c-media__body"
+          >
+            When everything breaks then this notification is shown. Color of indication: red.
+          </div>
+        </div>
+        <button
+          aria-label="Close"
+          className="alert__close  ui-btn  ui-btn--icon  ui-btn--lg"
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--bi bi-cross bi-lg"
+            version="1.1"
+            viewBox="0 0 14 14"
+          >
+            <path
+              d="M7 7.378l3.363 3.363a.496.496 0 0 0 .703-.004c.19-.19.197-.51.004-.703L7.707 6.67l3.363-3.363a.496.496 0 0 0-.004-.703.502.502 0 0 0-.703-.004L7 5.964 3.637 2.6a.496.496 0 0 0-.703.004.502.502 0 0 0-.004.703L6.293 6.67 2.93 10.034a.496.496 0 0 0 .004.703c.19.19.51.197.703.004L7 7.378z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
