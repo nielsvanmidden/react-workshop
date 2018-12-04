@@ -4,20 +4,24 @@ import Toast from './components/toast';
 import Alert from './components/alert';
 
 class Toaster extends React.Component {
-  state = { data: this.props.data };
+  constructor(props) {
+    super(props);
 
-  onDismissToast = (uiId) => {
-    this.setState(({ data }) => ({ data: data.filter((item) => item.uiId !== uiId) }));
+    this.onDismissToast = this.onDismissToast.bind(this);
+
+    this.state = {
+      data: this.props.data,
+    };
+  }
+
+  onDismissToast() {
+    this.setState();
   }
 
   render() {
     return (
       <div className="toast toast--bottom">
-        { this.state.data.map((item) => (
-          <Toast key={ item.uiId }>
-            <Alert { ...item } onClick={ this.onDismissToast } />
-          </Toast>
-        ))}
+        Toasts to render
       </div>
     );
   }

@@ -7,8 +7,8 @@ const initialize = (req) => {
 
   const loadStories = () => {
     require('../1-introduction/src/js/__stories__/index.stories');
-    require('../2-redux/src/js/__stories__/index.stories');
-    require('../4-separation-of-concerns/src/js/__stories__/index.stories');
+    // require('../2-redux/src/js/__stories__/index.stories');
+    // require('../4-separation-of-concerns/src/js/__stories__/index.stories');
   };
 
   configure(loadStories, module);
