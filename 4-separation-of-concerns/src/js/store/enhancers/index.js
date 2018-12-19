@@ -1,4 +1,3 @@
-import viewportEnhancer from './enhancer-viewport';
 import keyPressControlEnhancer from './enhancer-global-controls';
 
 export default () =>
