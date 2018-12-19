@@ -10,7 +10,7 @@ const Toaster = ({ actions, toaster }) => (
   <div className="toast  toast--bottom">
     { toaster.data.map((item) => (
       <Toast key={ item.uiId }>
-        <Alert { ...item } onClick={ actions.onDismissToast } />
+        <Alert { ...item } onClick={ () => actions.onDismissToast(item.uiId) } />
       </Toast>
     ))}
   </div>

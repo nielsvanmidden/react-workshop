@@ -2,13 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 /* eslint max-len: 0 */
-const Button = ({ onClick, uiId }) => {
-  const onButtonClick = () => onClick(uiId);
+const Button = ({ onClick }) => {
 
   return (
     <button
       type="button"
-      onClick={ onButtonClick }
+      onClick={ onClick }
       className="alert__close  ui-btn  ui-btn--icon  ui-btn--lg"
       aria-label="Close">
       <svg version="1.1" viewBox="0 0 14 14" className="svg-inline--bi bi-cross bi-lg" aria-hidden="true">
@@ -20,7 +19,6 @@ const Button = ({ onClick, uiId }) => {
 
 Button.propTypes = {
   onClick: PropTypes.func.isRequired,
-  uiId: PropTypes.string.isRequired,
 };
 
 export default Button;
