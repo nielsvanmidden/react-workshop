@@ -3,7 +3,7 @@
 exports[`<App /> Snaphot should match default 1`] = `
 <div>
   <div
-    className="toast toast--bottom"
+    className="toast  toast--bottom"
   >
     <div>
       <div
