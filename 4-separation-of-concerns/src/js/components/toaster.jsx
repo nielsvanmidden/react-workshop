@@ -10,7 +10,7 @@ const Toaster = ({ actions, toaster }) => (
   <div className="toast  toast--bottom">
     { toaster.data.map((item) => (
       <Toast key={ item.uiId }>
-        <Alert { ...item } onClick={ actions.onDismissToast } />
+        <Alert { ...item } onClick={ () => actions.onDismissToast(item.uiId) } />
       </Toast>
     ))}
   </div>
@@ -21,12 +21,14 @@ Toaster.propTypes = {
   actions: PropTypes.shape({
     onDismissToast: PropTypes.func.isRequired,
   }).isRequired,
-  data: PropTypes.arrayOf(PropTypes.shape({
-    description: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    type: PropTypes.string.isRequired,
-    uiId: PropTypes.string.isRequired,
-  })).isRequired,
+  toaster: PropTypes.shape({
+    data: PropTypes.arrayOf(PropTypes.shape({
+      description: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      uiId: PropTypes.string.isRequired,
+    })).isRequired,
+  }),
 };
 
 export default connect(
